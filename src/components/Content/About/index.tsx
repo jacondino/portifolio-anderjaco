@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import * as S from './styles'
 import { Container } from '../../Grid'
 
-export const About = () => {
+export const About: FC = () => {
   return (
     <S.About>
       <Container>
