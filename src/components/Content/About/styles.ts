@@ -29,29 +29,82 @@ export const About = styled.article`
     line-height: 1;
   }
 
-  .about__box {
-    flex-wrap: wrap;
-    display: flex;
-    padding-top: 3em;
-  }
+  .aboutIcon {
+    position: absolute;
 
-  .about__box__text,
-  .about__box__figure {
-    flex: 1 0 50%;
-  }
+    &.pointLeft {
+      left: 0;
+    }
 
-  .about__box__text {
-    p {
-      margin: 25px 0 0;
+    &.pointBottom {
+      left: 45%;
+      bottom: 0;
+    }
+
+    &.circleCenter {
+      left: 50%;
+      top: 20%;
+      opacity: 0.1;
+    }
+
+    &.waveLineBottom {
+      bottom: -12%;
+    }
+
+    &.waveLineRight {
+      right: 0;
+      bottom: -30%;
+      transform: scaleX(-1);
+      opacity: 0.2;
+
+      svg path {
+        stroke: #0058ff;
+      }
+    }
+
+    &.waveTopRight {
+      right: 5%;
+      top: 20%;
+      rotate: 30deg;
+
+      svg path {
+        stroke: #0058ff;
+      }
+    }
+
+    &.prideTopRight {
+      right: 30%;
+      top: 10%;
     }
   }
+`
 
-  .about__box__text__sub {
-    display: flex;
-    padding-top: 3em;
+export const Box = styled.div`
+  flex-wrap: wrap;
+  display: flex;
+  padding-top: 3em;
+`
 
-    p {
-      font-size: 1.5em;
-    }
+export const BoxText = styled.div`
+  flex: 1 0 50%;
+
+  p {
+    margin: 25px 0 0;
   }
+`
+
+export const BoxTextSub = styled.div`
+  display: flex;
+  padding-top: 3em;
+
+  p {
+    font-size: 1.5em;
+  }
+`
+
+export const Avatar = styled.div`
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1 0 50%;
 `

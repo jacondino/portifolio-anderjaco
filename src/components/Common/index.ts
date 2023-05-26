@@ -1,0 +1,6 @@
+export { Avatar } from './Avatar'
+export { WaveIcon } from './Icons/wave'
+export { PointIcon } from './Icons/points'
+export { CircleIcon } from './Icons/cirrcle'
+export { WaveLineIcon } from './Icons/waveLine'
+export { PrideIcon } from './Icons/pride'
